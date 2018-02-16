@@ -1,0 +1,15 @@
+<h1>{{title}}</h1>
+<nav>
+  <a routerLink="/dashboard">Dashboard</a>
+  <a routerLink="/heroes">Heroes</a>
+</nav>
+<div>
+  <h4>User</h4>
+  <p>Name: {{user.name}}, Points: {{user.points}}, Badge: {{user.level.badge}}</p>
+</div>
+<div>
+  <h4>Gamification Progress</h4>
+  <progress max="{{progress.max}}" value="{{progress.value}}"></progress>
+</div>
+<router-outlet></router-outlet>
+<app-messages></app-messages>
